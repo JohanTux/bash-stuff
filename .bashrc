@@ -127,14 +127,6 @@ export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=$PATH:$HOME/Utilities/ShellScripts
 
 #Some Jonathan aliases
-alias zgc="cd ~/gatecrashers_laravel/zgcl54"
-alias avp="cd ~/programming/vapor"
-alias avpdev="cd ~/programming/vapor && subl ."
-alias zgcdev="cd ~/gatecrashers_laravel/zgcl54 && subl ."
-alias dwarf="~/programs/DwarfFortress/df_linux/df"
-alias serve="php artisan serve --host=192.168.1.147 --port=8888"
-alias phpstorm="phpstorm.sh"
-
 
 #added from udacity git course
 # Enable tab completion
@@ -144,7 +136,10 @@ source ~/git-completion.bash
 green="\[\033[0;32m\]"
 blue="\[\033[0;34m\]"
 purple="\[\033[0;35m\]"
+cyan="\[\033[0;36m\]"
 yellow="\[\033[0;93m\]"
+white="\[\033[0;37m\]"
+red="\[\033[0;31m\]"
 reset="\[\033[0m\]"
 
 # Change command prompt
@@ -153,4 +148,4 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
-export PS1="$yellow\u$green\$(__git_ps1)$blue \W $ $reset"
+export PS1="$yellow\u$green\$(__git_ps1) $red\W $ $reset"
